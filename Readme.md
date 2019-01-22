@@ -50,3 +50,23 @@
 14.To merge specified branch's history into current branch (git merge Pramati).
 
 15.To fetch & merge changes on remote server to working directory (git pull https://github.com/prasannayasan/Rpx-Training).
+
+16.Shows the file differences which are not yet staged (git diff).
+
+17.Shows the differences between the files in staging area and latest version present (git diff –staged).
+
+18.To unstage a file, but to prevent its content (git reset [filename]).
+
+19.To lists all local branches in current repository (git branch).
+
+20.To create a new branch (git branch [branch name]).
+
+21.To delete a branch (git branch -d [branch name]).
+
+22.To temporarily stores all the modified tracked files (git stash save).
+
+23.To restores the most recently stashed files (git stash pop).
+
+24.To lists all stashed changesets (git stash list).
+
+25.To discards the most recently stashed changeset (git stash drop).
