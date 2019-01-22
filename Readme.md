@@ -1,4 +1,4 @@
-# GIT
+# GITHUB
 ##### GitHub is open source tool for version control and source code management. It provides access control and several collaboration tools such as bug tracking and task management.
 
 ## GIT Installation
