@@ -72,3 +72,13 @@
 25.Lists all stashed changesets (**git stash list**).
 
 26.Discards the most recently stashed changeset (**git stash drop**).
+
+27.Specifies intentionally untracked files (**gitignore**).
+
+28.Renaming a file (**git mv file_oldname.txt file_newname.txt**).
+
+29.Revert one commit (**git revert [commitID]**).
+
+30.Adding some commits to top of current branch (**git revert [file1] [file2]**).
+
+31.Changing commit message after push (**git commit --amend -m "New commit message"**).
