@@ -27,7 +27,7 @@
 
 3.Creating local repository (git init Rpx-Training).
 
-4.Adding repository files to an index (git add filename).
+4.Adding repository files to a staging area (git add filename).
 
 5.Committing changes made to index (git commit -m "some_message").
 
