@@ -7,10 +7,15 @@
  
 ##### Install the Git(ver).exe file from the download path.
 ![Screenshot 1](https://github.com/prasannayasan/Rpx-Training/blob/master/1.png)
+#### Select the components that are required.
 ![Screenshot 2](https://github.com/prasannayasan/Rpx-Training/blob/master/2.png)
+#### Select the editor.
 ![Screenshot 3](https://github.com/prasannayasan/Rpx-Training/blob/master/3.png)
+#### Add the environment.
 ![Screenshot 4](https://github.com/prasannayasan/Rpx-Training/blob/master/4.png)
+#### Select the backend.
 ![Screenshot 5](https://github.com/prasannayasan/Rpx-Training/blob/master/5.png)
+#### Check the options and click install.
 ![Screenshot 6](https://github.com/prasannayasan/Rpx-Training/blob/master/6.png)
 
 ## GIT Commands
