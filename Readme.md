@@ -21,7 +21,9 @@
 ## GIT Commands
 ![GIT Tool](https://github.com/prasannayasan/Rpx-Training/blob/master/git%20tool.png)
 
-1.Configure GitHub (git config --global user.name "user_name", git config --global user.email "email_id").
+1.Configure GitHub with username(git config --global user.name "user_name").
+
+2.Configure Github with email(git config --global user.email "email_id").
 
 2.Creating local repository (git init Rpx-Training).
 
@@ -47,26 +49,26 @@
 
 13.To switch between branches (git checkout [branch name]).
 
-14.To merge specified branch's history into current branch (git merge Pramati).
+14.Merge specified branch's history into current branch (git merge Pramati).
 
-15.To fetch & merge changes on remote server to working directory (git pull https://github.com/prasannayasan/Rpx-Training).
+15.Fetch & merge changes on remote server to working directory (git pull https://github.com/prasannayasan/Rpx-Training).
 
 16.Shows the file differences which are not yet staged (git diff).
 
 17.Shows the differences between the files in staging area and latest version present (git diff –staged).
 
-18.To unstage a file, but to prevent its content (git reset [filename]).
+18.Unstage a file, but to prevent its content (git reset [filename]).
 
-19.To lists all local branches in current repository (git branch).
+19.Lists all local branches in current repository (git branch).
 
-20.To create a new branch (git branch [branch name]).
+20.Create a new branch (git branch [branch name]).
 
-21.To delete a branch (git branch -d [branch name]).
+21.Delete a branch (git branch -d [branch name]).
 
-22.To temporarily stores all the modified tracked files (git stash save).
+22.Temporarily stores all the modified tracked files (git stash save).
 
-23.To restores the most recently stashed files (git stash pop).
+23.Restores the most recently stashed files (git stash pop).
 
-24.To lists all stashed changesets (git stash list).
+24.Lists all stashed changesets (git stash list).
 
-25.To discards the most recently stashed changeset (git stash drop).
+25.Discards the most recently stashed changeset (git stash drop).
