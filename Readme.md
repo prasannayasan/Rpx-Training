@@ -6,6 +6,12 @@
  ![Download](https://github.com/prasannayasan/Rpx-Training/blob/master/download.png)
  
 ##### Install the Git(ver).exe file from the download path.
+![Screenshot 1](https://github.com/prasannayasan/Rpx-Training/blob/master/1.png)
+![Screenshot 2](https://github.com/prasannayasan/Rpx-Training/blob/master/2.png)
+![Screenshot 3](https://github.com/prasannayasan/Rpx-Training/blob/master/3.png)
+![Screenshot 4](https://github.com/prasannayasan/Rpx-Training/blob/master/4.png)
+![Screenshot 5](https://github.com/prasannayasan/Rpx-Training/blob/master/5.png)
+![Screenshot 6](https://github.com/prasannayasan/Rpx-Training/blob/master/6.png)
 
 ## GIT Commands
 ![GIT Tool](https://github.com/prasannayasan/Rpx-Training/blob/master/git%20tool.png)
