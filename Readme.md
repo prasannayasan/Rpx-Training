@@ -21,54 +21,54 @@
 ## GIT Commands
 ![GIT Tool](https://github.com/prasannayasan/Rpx-Training/blob/master/git%20tool.png)
 
-1.Configure GitHub with username(git config --global user.name "user_name").
+1.Configure GitHub with username(**git config --global user.name "user_name"**).
 
-2.Configure Github with email(git config --global user.email "email_id").
+2.Configure Github with email(**git config --global user.email "email_id"**).
 
-3.Creating local repository (git init Rpx-Training).
+3.Creating local repository (**git init Rpx-Training**).
 
-4.Adding repository files to a staging area (git add filename).
+4.Adding repository files to a staging area (**git add filename**).
 
-5.Committing changes made to index (git commit -m "some_message").
+5.Committing changes made to index (**git commit -m "some_message"**).
 
-6.Connecting local repository with github (git remote add origin https://github.com/prasannayasan/Rpx-Training).
+6.Connecting local repository with github (**git remote add origin https://github.com/prasannayasan/Rpx-Training**).
 
-7.Pushing the files in local repository to GitHub repository(git push origin master).
+7.Pushing the files in local repository to GitHub repository(**git push origin master**).
 
-8.Cloning an repository (git clone https://github.com/prasannayasan/Rpx-Training).
+8.Cloning an repository (**git clone https://github.com/prasannayasan/Rpx-Training**).
 
-9.Displays all the committed files (git status).
+9.Displays all the committed files (**git status**).
 
-10.Deleting a file from directory (git rm Readme.md).
+10.Deleting a file from directory (**git rm Readme.md**).
 
-11.Listing ver history for current branch (git log, git log --follow [filename])
+11.Listing ver history for current branch (**git log, git log --follow [filename]**)
 
-12.Displays metadata & content changes of specified commit (git show [commit]).
+12.Displays metadata & content changes of specified commit (**git show [commit]**).
 
-13.For giving tags to specified commit (git tag [commitID]).
+13.For giving tags to specified commit (**git tag [commitID]**).
 
-14.To switch between branches (git checkout [branch name]).
+14.To switch between branches (**git checkout [branch name]**).
 
-15.Merge specified branch's history into current branch (git merge Pramati).
+15.Merge specified branch's history into current branch (**git merge Pramati**).
 
-16.Fetch & merge changes on remote server to working directory (git pull https://github.com/prasannayasan/Rpx-Training).
+16.Fetch & merge changes on remote server to working directory (**git pull https://github.com/prasannayasan/Rpx-Training**).
 
-17.Shows the file differences which are not yet staged (git diff).
+17.Shows the file differences which are not yet staged (**git diff**).
 
-18.Shows the differences between the files in staging area and latest version present (git diff –staged).
+18.Shows the differences between the files in staging area and latest version present (**git diff –staged**).
 
-19.Unstage a file, but to prevent its content (git reset [filename]).
+19.Unstage a file, but to prevent its content (**git reset [filename]**).
 
-20.Lists all local branches in current repository (git branch).
+20.Lists all local branches in current repository (**git branch**).
 
-21.Create a new branch (git branch [branch name]).
+21.Create a new branch (**git branch [branch name]**).
 
-22.Delete a branch (git branch -d [branch name]).
+22.Delete a branch (**git branch -d [branch name]**).
 
-23.Temporarily stores all the modified tracked files (git stash save).
+23.Temporarily stores all the modified tracked files (**git stash save**).
 
-24.Restores the most recently stashed files (git stash pop).
+24.Restores the most recently stashed files (**git stash pop**).
 
-25.Lists all stashed changesets (git stash list).
+25.Lists all stashed changesets (**git stash list**).
 
-26.Discards the most recently stashed changeset (git stash drop).
+26.Discards the most recently stashed changeset (**git stash drop**).
