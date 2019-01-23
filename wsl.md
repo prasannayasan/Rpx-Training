@@ -21,8 +21,9 @@ Windows Subsystem for Linux is a compatibility layer for running Linux binary ex
 
 ## Ubuntu Connection
 - Command -> **lsb_release -a** to check bash & ubuntu version.
--   we can intergrate bash with hyper for great UI.
--   we can use bash with visual studio as well.
+- we can intergrate bash with hyper for great UI.
+- we can use bash with visual studio as well.
+- Linus Subsystem will share files with Window Subsystem.
 
 
 ## Warning
