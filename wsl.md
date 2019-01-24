@@ -7,6 +7,7 @@ Windows Subsystem for Linux is a compatibility layer for running Linux binary ex
 - Open microsoft store -> search for Ubuntu -> download that, need to sign in with microsoft acc for downloading.
 - Search Bash for on the search menu -> open Bash.
 - Required to give new bash username & password.
+- Enter cd / mnt to view all the 
 - Select a path where you going to work with projects.
 - To update packages -> **sudo apt update** .
 - Need to provide the password.
