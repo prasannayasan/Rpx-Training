@@ -1,7 +1,7 @@
 # Getting data from CV using Python
 
 ## TASK :
-Convert all the files from the given folder and extract the Technical skills from the files and store the count of language known in the Excel sheet.
+        Convert all the files from the given folder and extract the Technical skills from the files and store the count of language known in the Excel sheet.
         
 ### Requirement :
 - Get technical skill details from all resumes on a directory.
