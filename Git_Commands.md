@@ -69,5 +69,3 @@
 30.Adding some commits to top of current branch (**git revert [file1] [file2]**).
 
 31.Changing commit message after push (**git commit --amend -m "New commit message"**).
-
-32.To add image on md file (**![imageName](ImageLink)**)
