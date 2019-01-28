@@ -8,6 +8,7 @@ from pdfminer.converter import TextConverter
 from pdfminer.layout import LAParams
 from pdfminer.pdfpage import PDFPage
 from cStringIO import StringIO
+from IPython import embed
 
 skillset = []
 def skillReader(SkillPath):
@@ -38,8 +39,6 @@ def pdfToTxt(path):
     retstr.close()
     return str
 
-
-
 def documentToText(filename, filepath):
     if filename[-4:] == ".doc":
         cmd = ['antiword', filepath]
@@ -67,11 +66,15 @@ list = os.listdir(fileDirectory)
 skillReader(SkillPath)
 
 workbook = xlsxwriter.Workbook('SkillSetReader.xlsx')
-worksheet = workbook.add_worksheet()
+worksheet = workbook.add_worksheet('SkillCounter')
 
 worksheet.write('A1','Resume')
 worksheet.write('B1','Skillcount')
 worksheet.write('C1','    Skills')
+worksheet.write('E1',' Phone')
+worksheet.write('G1',' EmailId')
+
+
 i = 3
 
 for fname in list:
@@ -83,32 +86,38 @@ for fname in list:
 	filecreate = open(newfname,'w')
 	filecreate.write(val)
 	
+	mail = re.findall('\S+@\S+', val)
+	print(mail)
+	phone = re.findall(r'\d{10}', val)
+
 	skillcount = 0
 	skillname = ""
 	for skilltest in skillset:
 		skilltest = skilltest.lower()
-		#print(skilltest)
 		count = 0
 		for test in val.split(' '):
 			test = test.lower()	
-
 			test = re.sub(r'[?|.|,|!|:|;|#]',r'',test)
 
 			length = len(skilltest)
 			if test.find(skilltest) != -1 and len(test) == length:
 				count = count + 1
-		#print(count)
 		if count != 0: 
-			skillname = skillname + '  ' + skilltest
+			skillname = skillname+ '  '+skilltest
 			skillcount = skillcount + 1
 	vala = 'A' + str(i)
 	valb = 'B' + str(i)
 	valc = 'C' + str(i)
-	print(resname , skillcount , skillname)
+	valf = 'E' + str(i)
+	valh = 'G' + str(i)
+
+	print(resname , skillcount , skillname , str(phone[0]) , mail)
 	worksheet.write(vala,resname)
 	worksheet.write(valb,skillcount)
 	worksheet.write(valc,skillname)
-	i = i+1
+	worksheet.write(valf,str(phone[0]))
+	worksheet.write(valh,mail)
+    i = i+1
 
 workbook.close()
 print('SkillSetReader.xlsx file is created')
