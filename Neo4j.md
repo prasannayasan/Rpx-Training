@@ -23,7 +23,7 @@
 - On the localhost page we can write Cyber query to execute the graphs
 
 #### Cyber queries :
-- Create a node  **CREATE(node) **.
+- Create a node  **CREATE(node)**.
 
 - Create node along with label : **CREATE (node:label)**.
 
