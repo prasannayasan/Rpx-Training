@@ -20,7 +20,7 @@
 - On the next page we set password.
 
 ### Working on Neo4j :
-- On the localhost page we can write Cyber query to execute the graphs
+- On the localhost page we can write Cypher query to execute the graphs
 
 #### Cyber queries :
 - Create a node  **CREATE(node)**.
