@@ -4,19 +4,6 @@
 ## GIT Installation
 ##### Download the software from the internet. [Download Link](https://git-scm.com/downloads)
  ![Download](https://github.com/prasannayasan/Rpx-Training/blob/master/download.png)
- 
-##### Install the Git(ver).exe file from the download path.
-![Screenshot 1](https://github.com/prasannayasan/Rpx-Training/blob/master/1.png)
-#### Select the components that are required.
-![Screenshot 2](https://github.com/prasannayasan/Rpx-Training/blob/master/2.png)
-#### Select the editor.
-![Screenshot 3](https://github.com/prasannayasan/Rpx-Training/blob/master/3.png)
-#### Add the environment.
-![Screenshot 4](https://github.com/prasannayasan/Rpx-Training/blob/master/4.png)
-#### Select the backend.
-![Screenshot 5](https://github.com/prasannayasan/Rpx-Training/blob/master/5.png)
-#### Check the options and click install.
-![Screenshot 6](https://github.com/prasannayasan/Rpx-Training/blob/master/6.png)
 
 ## GIT Commands
 ![GIT Tool](https://github.com/prasannayasan/Rpx-Training/blob/master/git%20tool.png)
@@ -82,5 +69,3 @@
 30.Adding some commits to top of current branch (**git revert [file1] [file2]**).
 
 31.Changing commit message after push (**git commit --amend -m "New commit message"**).
-
-32.To add image on md file (**![imageName](ImageLink)**)
