@@ -31,4 +31,3 @@ with graphDB_Driver.session() as graphDB_Session:
     nodes = graphDB_Session.run(cqlEdgeQuery)  
     for node in nodes:
        print(node)
-
