@@ -1,5 +1,5 @@
 # Apache Hadoop 
-        Hadoop is a collection of open-source software utilities that facilitate using a network of many computers to solve problems involving massive amounts of data and computation.
+   Hadoop is a collection of open-source software utilities that facilitate using a network of many computers to solve problems involving massive amounts of data and computation.
 ### Installing Java
 - To get started, we'll update our package list:
 ```
