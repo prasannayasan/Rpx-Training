@@ -3,8 +3,6 @@ from pyspark.sql import SparkSession
 from pyspark.sql import SQLContext
 
 spark = SparkSession .builder .appName("Python Spark SQL basic example") .config("spark.some.config.option", "some-value") .getOrCreate()
-
-sparkSession = SparkSession.builder.appName("example-pyspark-read-and-write").getOrCreate()
 df_load = sparkSession.read.csv("hdfs://localhost:54310/hdfs/demolarge4.csv")
 
 df_load.show(29693, False)
