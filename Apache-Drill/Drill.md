@@ -23,7 +23,11 @@ bin/drill-embedded
 ```
 - The message of the day followed by the 0: jdbc:drill:zk=local> prompt appears.
 
-
+### Drill Config :
+- Enter into localhost:8047
+- Click on storage plugin and change the below information.
+  { "connection": "hdfs://<IP_Addr>:<port>/" }
+      
 ### OPERATIONS IN DRILL :
 - And :
       SELECT name FROM dfs.`/home/prasanna/prasanna/Python-workspace/html.json` where mark1=70 and mark2=80 ;
