@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Resume_Uploader</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+        background-image: url("https://previews.123rf.com/images/hilch/hilch1504/hilch150400016/38624941-metaball-abstract-background-connected-circles-integrated-flat-icons-brain-concept-for-business-comm.jpg");
+  } 
+    h1 {
+      font-size: 4em;
+      font-weight: bold;
+      color: blue;
+      text-align: center
+    }
+    table {
+      margin: auto;
+    }
+  </style>
+</head>
+ 
+<body>
+  <h1>
+        Resume - Uploader
+  </h1>
+<table>
+  <tr>
+    <td>
+      <form action="{{ request.build_absolute_uri }}upload/" method="POST" enctype="multipart/form-data">
+        <div class="column">
+          <input class = "col-md-10 btn btn-success" type="file" name="file"/>
+          <br />
+          <input class = "col-md-10 offset-2 btn btn-primary" type="submit" value="Upload File" />
+        </div>
+      </form>
+    </td>
+  </tr>
+</table>
+ 
+</body>
+</html>
