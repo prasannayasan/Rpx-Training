@@ -37,12 +37,21 @@ To begin, open hadoop-env.sh:
 ```
 sudo nano /usr/local/hadoop/etc/hadoop/hadoop-env.sh
 ```
-#### Running Hadoop
+#### Running Hadoop:
 Now we should be able to run Hadoop:
 ```
 /usr/local/hadoop/bin/hadoop
 ```
-### Hadoop Operation Modes
+### Hadoop_Store:
+- Create Store by passing Commands : 
+
+```$ sudo mkdir -p /usr/local/hadoop_store/hdfs/namenode```
+
+```$ sudo mkdir -p /usr/local/hadoop_store/hdfs/datanode```
+
+```$ sudo chown -R hduser:hadoop /usr/local/hadoop_store```
+
+### Hadoop Operation Modes:
 Once you have downloaded Hadoop, you can operate your Hadoop cluster in one of the three supported modes :
 - Local/Standalone Mode − After downloading Hadoop in your system, by default, it is configured in a standalone mode and can be run as a single java process.
 
@@ -73,11 +82,11 @@ Once you have downloaded Hadoop, you can operate your Hadoop cluster in one of t
    </property>
    <property>
       <name>dfs.namenode.name.dir</name>
-      <value>/home/hadoop/hadoopinfra/hdfs/namenode </value>
+      <value>file:/usr/local/hadoop_store/hdfs/namenode</value>
    </property>
    <property>
       <name>dfs.datanode.data.dir</name> 
-      <value>/home/hadoop/hadoopinfra/hdfs/datanode </value> 
+      <value>file:/usr/local/hadoop_store/hdfs/datanode</value> 
    </property>
 </configuration>
 
@@ -91,7 +100,7 @@ Once you have downloaded Hadoop, you can operate your Hadoop cluster in one of t
 
 ##### yarn-site.xml:-
 <configuration>
-	<property>
+   <property>
       <name>yarn.nodemanager.aux-services</name>
       <value>mapreduce_shuffle</value>
    </property>
@@ -124,9 +133,10 @@ Once you have downloaded Hadoop, you can operate your Hadoop cluster in one of t
 - Save the key : ```sudo cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys```
 - To view status : ```ssh localhost```
 - To display the running nodes : ```jps```
+- Clear the namenode : ```hadoop namenode format```
+- Clear the datanode : ```hadoop datanode format```
 
-#### HDFS : 
-		
+#### HDFS : 	
 - Create HDFS : hadoop fs -mkdir <paths>
 - Display files : hadoop fs -ls <args>
 - Upload hdfs :  hadoop fs -put <localsrc> ... <HDFS_dest_Path>
