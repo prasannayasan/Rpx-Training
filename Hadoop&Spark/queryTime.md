@@ -1,5 +1,0 @@
-startTime = time.clock()
-value2 = spark.sql("SELECT * FROM demolarge3 limit 5000")
-value2.show(5000)
-endTime = time.clock()
-print(endTime-startTime)
