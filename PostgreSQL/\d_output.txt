@@ -1,0 +1,55 @@
+                                                                                   get_table_relation                                                                                    
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                         Table "public.playground"                                                                                                                      +
+ Column          | Type                  | Collation     | Nullable      | Default                                                                                                      +
+ -------------------------------------------------------------------------------------------                                                                                            +
+ equip_id        | integer               |               | not null      | nextval('playground_equip_id_seq'::regclass)  |                                                              +
+ type            | character varying(50) |               | not null      |                                               |                                                              +
+ color           | character varying(25) |               | not null      |                                               |                                                              +
+ location        | character varying(5)  |               | null          |                                               |                                                              +
+ Indexes:                                                                                                                                                                               +
+ "playground_pkey" PRIMARY KEY (equip_id), btree (equip_id)                                                                                                                             +
+ "equip_id_index" , btree (equip_id)                                                                                                                                                    +
+ Check constraints:                                                                                                                                                                     +
+ "playground_location_check", CHECK (location::text = ANY (ARRAY['north'::character varying, 'south'::character varying, 'west'::character varying, 'east'::character varying]::text[]))+
+ Rules:                                                                                                                                                                                 +
+                                                                                                                                                                                        +
+ Foreign key:                                                                                                                                                                           +
+                                                                                                                                                                                        +
+ Referenced by:                                                                                                                                                                         +
+ TABLE "coach" CONSTRAINT"coach_equip_id_fkey" FOREIGN KEY (equip_id) REFERENCES playground(equip_id)                                                                                   +
+ Triggers:                                                                                                                                                                              +
+ update_table BEFORE UPDATE ON playground FOR EACH ROW EXECUTE PROCEDURE when_update()                                                                                                  +
+ insert_table BEFORE INSERT ON playground FOR EACH ROW EXECUTE PROCEDURE when_insert()                                                                                                  +
+ Disabled Triggers:                                                                                                                                                                     +
+ 
+(1 row)
+
+                                      get_view_relation                                      
+---------------------------------------------------------------------------------------------
+                                                                                            +
+                         View "public.show_sys_views"                                       +
+ Column          | Type  | Collation| Nullable | Default                                    +
+ -------------------------------------------------------------------------------------------+
+ table_name      | name  |       |       |                                                  +
+ table_schema    | name  |       |       |                                                  +
+ table_owner     | name  |       |       |        
+(1 row)
+
+                                    get_function_details                                     
+---------------------------------------------------------------------------------------------
+                         List of functions                                                  +
+  Schema |name                   |resu   |argument_data  |type                              +
+ -------------------------------------------------------------------------------------------+
+ public  | get_view_header       | text  | viewname text | normal         
+(1 row)
+
+                                      get_view_relation                                      
+---------------------------------------------------------------------------------------------
+                                                                                            +
+                         View "public.show_views"                                           +
+ Column          | Type                                  | Collation| Nullable | Default    +
+ -------------------------------------------------------------------------------------------+
+ table_name      | information_schema.sql_identifier     |       |       |        
+(1 row)
+
